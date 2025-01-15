@@ -1,0 +1,1 @@
+Só reparei que a tarefa pedia explicação em txt ou pdf no final, porém comentei todos os programas.java para explicar o funcionamento 
