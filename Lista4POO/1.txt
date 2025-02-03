@@ -1,0 +1,16 @@
+1) Receber os valores de A, B e C de uma equação de segundo grau e calcular 
+X1 e X2
+
+importa a biblioteca math pra usar a função de raiz quadrada
+
+cria uma funcao chamada calcular raizes que recebe a, b e c 
+variavel delta que recebe a primeira parte da formula de baskara
+
+sequencia de if elif else para cada possivel alternativa, 1 raiz real, 2 raizes reais, nao possui raizes reais 
+e retorna a resposta em forma de string
+
+mensagem informando a equacao do segundo grau
+cada variavel recebe um valor
+
+verifica se A é igual a zero, ou seja, eqacao de priemiro grau, para nao chamar a funcao
+else chama a funcao e calcula a resposta 
