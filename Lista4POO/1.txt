@@ -1,5 +1,6 @@
 1) Receber os valores de A, B e C de uma equação de segundo grau e calcular 
 X1 e X2
+---------------------------------------------------------------
 
 importa a biblioteca math pra usar a função de raiz quadrada
 

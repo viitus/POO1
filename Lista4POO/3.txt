@@ -1,0 +1,5 @@
+3) Crie uma lista de contados, cada um possuindo nome, telefone e email. 
+Crie um menu onde o usuário pode inserir um novo contato, apagar um contato, 
+procurar pelo nome ou sair. Crie funções para cada operação.
+---------------------------------------------------------
+

@@ -1,2 +1,11 @@
 2) Calcular o IMC (índice de massa corporal) do usuário. 
 Utilize a fórmula: imc = peso / altura^2
+------------------------------------
+
+funcao que calcula o imc recebe o peso e altura
+retorna o float peso dividido pela altura ao quadrado
+
+print de mensagem entrada
+variaveis recebem float peso e altura
+
+verifica se uma das variaveis é zero e exibe mensagem de aviso
