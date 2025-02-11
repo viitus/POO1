@@ -3,3 +3,22 @@ Crie um menu onde o usuário pode inserir um novo contato, apagar um contato,
 procurar pelo nome ou sair. Crie funções para cada operação.
 ---------------------------------------------------------
 
+contatos[]: 
+cria o array de contatos que será um dicionario com nome, telefone e email
+
+adicionar_contatos(): 
+adiciona todas informações ao dicionario contatos
+
+validar_email() e validar_telefone():
+verifica se os emails e telefones estao no formato correto
+
+buscar_contato_info(): 
+exibe as informaçoes de um contato e retorna um contato caso ele exista no dicionario,
+ou None caso nao exista
+
+excluir_contatos():
+busca um contato com a funcao buscar_contato_info() e verifica se ele existe
+apos isso pergunta o usuario se deseja realmente excluir
+
+main():
+exibe o menu de opções dentro de um loop de while e executa a opção escolhida
