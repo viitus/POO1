@@ -1,0 +1,20 @@
+7) Crie uma classe base MaterialBiblioteca com atributos titulo e ano.
+Crie subclasses:
+• Livro: Atributos adicionais autor e num_paginas.
+• Revista: Atributos adicionais volume e edicao.
+• DVD: Atributo adicional duração.
+Implemente um método na superclasse para exibir informações básicas,
+e sobrescreva-o em cada subclasse para exibir informações detalhadas
+
+class MaterialBiblioteca:
+recebe atributos titulo e ano e metodo exibir_informacoes()
+
+class Livro, Revista e DVD:
+recebe a classe MaterialBiblioteca e os atributos extras
+possui o metodo exibir_informacoes que herda do MaterialBiblioteca e adiciona print de informações extras
+
+def exibir_materiais():
+recebe um array de materiais e chama o metodo exibir_informacoes de cada elemento do array
+
+main():
+exibe um menu de opçao para adicinar cada tipo de materia, exibir a lista de todos, ou sair

@@ -3,6 +3,8 @@ e uma classe chamada Círculo (com raio e um método area).
 Faça o usuário preencher uma lista com 5 Triângulos e outra com 5 círculos. 
 Exiba na tela o triângulo e o círculo com maior área.
 
+importa a biblioteca Math para usar o pi na formula de area do circulo.
+
 class Triangulo:
 recebe base e altura como parametros e tem metodo que calcula area
 

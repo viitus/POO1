@@ -1,0 +1,27 @@
+8) Crie uma classe base chamada Forma com:
+Método abstrato area.
+Crie subclasses:
+• Retangulo: Recebe largura e altura no construtor e calcula a área.
+• Circulo: Recebe o raio no construtor e calcula a área.
+• Triangulo: Recebe base e altura no construtor e calcula a área.
+Faça testes, calculandos todas as áreas
+
+importa a biblioteca Math para usar o pi na formula de area do Circulo
+importa o modulo abc para usar metodos abstratos
+
+Class Forma(ABC):
+cria a classe abstrata a partir do modulo ABC
+e cria o metodo abstrato area()
+
+Class Retangulo(), Triangulo() e Circulo():
+herdam de Forma e contem atributos proprios
+implementam o metodo area() com formulas proprias
+
+encontrar_maior_area(lista):
+recebe um array de formas e retorna item com maior area
+
+main():
+cria um array de formas
+cria um menu que recebe uma opcao de cadastras e calcula a area de uma das 3 formas
+ou exibe a lista de formas cadastradas ou calcula a forma com maior area.
+cada opcao recebe os atributos de cada forma e adiciona a forma a lista de formas 
