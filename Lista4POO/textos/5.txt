@@ -1,0 +1,20 @@
+5) Crie uma classe chamada Triangulo (com base, altura e um método area)
+e uma classe chamada Círculo (com raio e um método area). 
+Faça o usuário preencher uma lista com 5 Triângulos e outra com 5 círculos. 
+Exiba na tela o triângulo e o círculo com maior área.
+
+class Triangulo:
+recebe base e altura como parametros e tem metodo que calcula area
+
+class Circulo:
+recebe raio como parametro e tem metodo que calcula area
+
+encontrar_maior_area(lista):
+recebe um array tringulos ou circulos e retorna o de maior area
+
+main():
+cria array de triangulos e array de circulos
+recebe do usuario base e altura e adiciona o triangulo ao array 5 vezes
+recebe do usuario o raio e adiciona o circulo ao array 5 vezes
+chama a função encontrar_maior_area para o triangulo e para o circulo
+exibe o resultado da area do maior triangulo e circulo.

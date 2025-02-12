@@ -1,9 +1,9 @@
 contatos = []
 
 def adicionar_contato():
-    nome = input("Digite o nome: ").strip().lower()
-    telefone = input("Digite o telefone: ").strip()
-    email = input("Digite o e-mail: ").strip().lower()
+    nome = input("Digite o nome: ")
+    telefone = input("Digite o telefone: ")
+    email = input("Digite o e-mail: ")
     if not validar_email(email):
         print("E-mail inválido!")
         return
@@ -21,12 +21,11 @@ def validar_email(email):
 
 
 def validar_telefone(telefone):
-    telefone_limpo = telefone.replace(" ", "").replace("-", "").replace("(", "").replace(")", "")
-    return telefone_limpo.isdigit()
+    return telefone.isdigit()
 
 
 def buscar_contato_info():
-    nome = input("Digite o nome do contato: ").strip().lower()
+    nome = input("Digite o nome do contato: ")
     for contato in contatos:
         if contato["nome"].lower() == nome:
             print(f"Nome: {contato['nome']}, Telefone: {contato['telefone']}, E-mail: {contato['email']}")
@@ -38,8 +37,8 @@ def buscar_contato_info():
 def excluir_contato():
     contato = buscar_contato_info()
     if contato:
-        confirmacao = input("Deseja excluir este contato? (sim/não): ").strip().lower()
-        if confirmacao == "sim":
+        confirmacao = input("Deseja excluir este contato? (s/n): ")
+        if confirmacao == "s":
             contatos.remove(contato)
             print("Contato excluído com sucesso!")
         else:
@@ -53,7 +52,8 @@ def main():
         print("2. Excluir Contato")
         print("3. Buscar Contato")
         print("4. Sair")
-        escolha = input("Digite sua escolha: ").strip()
+        escolha = input("Digite sua escolha: ")
+
         if escolha == '1':
             adicionar_contato()
         elif escolha == '2':

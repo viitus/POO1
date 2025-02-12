@@ -9,7 +9,7 @@ cria o array de contatos que será um dicionario com nome, telefone e email
 adicionar_contatos(): 
 adiciona todas informações ao dicionario contatos
 
-validar_email() e validar_telefone():
+validar_email(email) e validar_telefone(telefone):
 verifica se os emails e telefones estao no formato correto
 
 buscar_contato_info(): 

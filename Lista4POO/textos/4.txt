@@ -1,0 +1,28 @@
+4) Crie uma classe Produto com os atributos nome, preço e estoque.
+Seu programa principal deve ter uma lista do tipo produto. 
+Crie um menu com opções para:inserir, excluir, procurar e sair.
+
+class Produto: 
+cria classe produto com os atributos nome, preço e estoque
+cria metodo que retorna informaçoes sobre o produto em formato de string
+
+inserir_produto(lista_produtos):
+recebe nome, preco e estoque, cria um objeto produto e insere esses dados
+adicione esse prduuto ao array de produtos
+exibe mansagens de confirmação
+
+excluir_produto(lista_produtos):
+recebe um nome, verifica se existe produto com esse nome no array e exibe informaçoes sobre ele
+se existe confirma a exclusao com o usuario e o remove do array
+se nao a operação é cancelada
+
+procurar_produto(lista_produtos):
+recebe um nome de produto, verfica se ele existe no array e retorna informações sobre ele
+
+listar_produtos(lista_produtos):
+exibe informações de todos os produtos cadastrados
+
+main();
+cria array de produtos
+loop principal
+exibe menu de opcoes e pede o usuario para escolher, e chama cada funcao de acordo com a escolha

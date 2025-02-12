@@ -1,0 +1,22 @@
+6) Crie as classes:
+Pessoa: Atributos nome e idade, 
+com o método apresentar, que exibe "Meu nome é {nome} e tenho {idade} anos".
+Empregado: Atributos cargo e salario, 
+com o método exibir_dados, que exibe"Cargo: {cargo}, Salário: {salario}".
+PessoaEmpregado: Herda de Pessoa e Empregado.
+Teste criando um objeto PessoaEmpregado e chamando os métodos das classes base
+
+class Pessoa:
+tem como atributo nome e idade e metodo apresentar()
+
+class Empregado:
+tem como atributos cargo e salario e metodo exibir_dados()
+
+class PessoaEmpregado:
+herda a classe Pessoa e a classe Empregado e recebe os atributos das duas classes
+
+main():
+recebe do usuario as variaveis nome, idade, cargo e salario
+cria um objeto pessoa_empregado da classe PessoaEmpregado e atribui todas as variaveis recebidas
+chama o metodo apresentar() herdado da classe Pessoa
+chama o metodo exibir_dados() herdado da class Empregado 
