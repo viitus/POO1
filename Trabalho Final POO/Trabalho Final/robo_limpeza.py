@@ -34,14 +34,14 @@ class RoboLimpeza:
                 return matriz, x, y
     
     def exibir_matriz(self):
-        fundo_cinza = "\033[48;5;233m"  # Fundo cinza escuro
-        reset = "\033[0m"  # Reseta para o padrão do terminal
+        fundo_cinza = "\033[48;5;233m"  # Fundo escuro
+        reset = "\033[0m"  # Reset 
         
         cores = {
-            "X": f"{fundo_cinza}\033[94m◆ {reset}",  # Triângulo Azul com fundo cinza
-            "1": f"{fundo_cinza}\033[92m◉ {reset}",  # Ponto Verde com fundo cinza
-            "2": f"{fundo_cinza}\033[91m■ {reset}",  # Quadrado Vermelho com fundo cinza
-            "0": f"{fundo_cinza}  {reset}"  # Espaço em branco com fundo cinza
+            "X": f"{fundo_cinza}\033[94m◆ {reset}",  # Lozango Azul
+            "1": f"{fundo_cinza}\033[92m◉ {reset}",  # Ponto Verde
+            "2": f"{fundo_cinza}\033[91m■ {reset}",  # Quadrado Vermelho
+            "0": f"{fundo_cinza}  {reset}"
         }
         
         for linha in self.matriz:
@@ -67,18 +67,15 @@ class RoboLimpeza:
 
     def iniciar_limpeza(self):
         while True:
-            time.sleep(1)
+            time.sleep(0.5)
             os.system('cls')
             self.exibir_matriz()
-            direcao = self.robo.run(self.matriz, self.x, self.y)
-            if direcao == 'Q':
-                break
             self.passos += 1
             print(f"Passo: {self.passos}")
-            if self.mover_robo(direcao):
-                os.system('cls')
-                self.exibir_matriz()
-                print("Todas as sujeiras foram limpas! Fim do jogo.")
+            direcao = self.robo.run(self.matriz, self.x, self.y)
+            
+            if direcao == 'Q':
                 break
-            
-            
+
+            if self.mover_robo(direcao):
+                print("Todas as sujeiras foram limpas! Fim do jogo.")
