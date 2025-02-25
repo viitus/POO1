@@ -1,3 +1,14 @@
 # Projetos da Materia de Programação orientada a Objetos
-3 listas de exercicios em java
-teste
+
+### Listas
+Lista 1 - java
+Lista 2 - java
+Lista 3 - java
+Lista 4 - pyhton
+
+### Provas
+Prova 1 - presencial
+Prova 2 - python e java
+
+### Projeto final - python
+automatização de um robo de limpeza em uma matriz com obstaculos e sujeiras
